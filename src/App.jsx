@@ -1,8 +1,18 @@
-import './styles/global.css'
+import './styles/global.scss'
+// import RepositoryList from './components/RepositoryList'
+import Counter from './components/Counter'
 
 export function App() {
 
-    throw new Error('Eita Giovana o forninho caiu!'); 
+    // throw new Error('Eita Giovana o forninho caiu!'); 
 
-    return <div>Hello ReactJS</div>
+    return (
+        <div>
+            <h1>Hello ReactJS Batata Banana</h1>
+
+            {/* <RepositoryList /> */}
+
+            <Counter />
+        </div>
+    ) 
 }

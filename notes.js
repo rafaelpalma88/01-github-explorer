@@ -59,6 +59,13 @@ vamos adicionar o cross env para definir variaveis de ambiente independente do s
 os arquivos css nao conseguem ser lidos corretamente, entao precisamos instalar algumas coisas:
 yarn add style-loader css-loader -D
 
+o sass é o pre processador mais famoso e utilizado. adicionar atraves do yarn add node-sass sass-loader -D
+
+quando vc quiser remover algo q instalou errado: yarn remove sass (por exemplo)
+
+para manter o estado da aplicacao mesmo após fazer alguma alteracao no código e salvar, o diego recomenda que instale uma dependencia q chama
+React Refresh Webpack Plugin através do comando: yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
+
 
 
 */
