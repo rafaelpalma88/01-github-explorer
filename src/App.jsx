@@ -1,6 +1,6 @@
 import './styles/global.scss'
-// import RepositoryList from './components/RepositoryList'
-import Counter from './components/Counter'
+import RepositoryList from './components/RepositoryList'
+// import Counter from './components/Counter'
 
 export function App() {
 
@@ -10,9 +10,9 @@ export function App() {
         <div>
             <h1>Hello ReactJS Batata Banana</h1>
 
-            {/* <RepositoryList /> */}
+            <RepositoryList />
 
-            <Counter />
+            {/* <Counter /> Usamos este componente para aprender sobre o estado no React */}
         </div>
     ) 
 }

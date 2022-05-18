@@ -4,13 +4,13 @@ export default function RepositoryItem({ repository}) {
 
   return (
     <li>
-        <strong>{repository?.title ?? 'Default'}</strong> 
+        <strong>{repository?.name ?? 'Sem nome'}</strong> 
         {
             // estudar melhor sobre esse operador ?? 
         }
-        <p>{repository?.description}</p>
+        <p>{repository?.full_name}</p>
 
-        <a href={repository?.link ?? 'http://www.google.com.br'}>Acessar repositório</a>
+        <a href={repository?.url ?? 'http://www.google.com.br'} target="_blank">Acessar repositório</a>
     </li>
   )
 }
