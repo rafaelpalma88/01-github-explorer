@@ -66,6 +66,18 @@ quando vc quiser remover algo q instalou errado: yarn remove sass (por exemplo)
 para manter o estado da aplicacao mesmo após fazer alguma alteracao no código e salvar, o diego recomenda que instale uma dependencia q chama
 React Refresh Webpack Plugin através do comando: yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
 
+vamos instalar o typescript como uma dependencia de desenvolvimento : yarn add typescript -D
 
+inicializar o typescript através do comando: yarn tsc --init ou ainda yarn typescript --init que irá criar um arquivo tsconfig.json
+
+dentro do arquivo tsconfig.json vamos incluir na parte de lib as seguintes bibliotecas: "dom", "dom.iterable", "esnext"
+
+adicionar tambem o seguinte: yarn add @babel/preset-typescript -D . adicionar esse preset tambem no arquico babel.config.js
+
+iremos alterar diversas informacoes dentro do webpack.config.js
+
+trocar o index para index.jsx
+
+instalar as bibliotecas de tipo, por exemplo: yarn add @types/react-dom -D
 
 */
