@@ -1,12 +1,16 @@
 import React from 'react';
 
-type IRepository = {
-  name: string;
-  full_name: string;
-  url: string;
+export interface RepositoryItemProps {
+  repository: {
+    // id: string;
+    name: string;
+    full_name: string;
+    url: string;
+  },
+  
 }
 
-export default function RepositoryItem(props: any) {
+export default function RepositoryItem(props: RepositoryItemProps) {
 
   return (
     <li>
@@ -14,6 +18,7 @@ export default function RepositoryItem(props: any) {
         {
             // estudar melhor sobre esse operador ?? 
         }
+
         <p>{props.repository?.full_name}</p>
 
         <a href={props.repository?.url ?? 'http://www.google.com.br'} target="_blank">Acessar repositório</a>
